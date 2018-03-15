@@ -14,4 +14,12 @@
 * 不依赖于Web容器，基于Netty的开发，在性能上要比Zuul要好
 
 # 详细说明
- 
+ 要运行起来需要在pom.xml中手动添加saluki的jar包依赖，该jar包可以去拉取项目然后编译而获得。
+<build>
+  <resources>
+				<resource>
+					<directory>libs</directory>
+					<targetPath>${project.build.directory}/libs</targetPath>
+				</resource>
+			</resources>
+		</build>
